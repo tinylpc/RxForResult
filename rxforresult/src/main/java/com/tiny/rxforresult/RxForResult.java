@@ -18,7 +18,7 @@ import rx.subjects.PublishSubject;
  */
 public class RxForResult {
 
-	static final String TAG = "RxActivityForResult";
+	static final String TAG = "RxForResult";
 	RxResultFragment mRxActivityResultFragment;
 
 	public RxForResult(Activity activity) {
@@ -40,12 +40,8 @@ public class RxForResult {
 
 	public Observable<RxResultEntity> startReuqest() {
 
-		PublishSubject<RxResultEntity> subject = mRxActivityResultFragment.getSubjectActivityResult();
-
-		if (subject == null) {
-			subject = PublishSubject.create();
-			mRxActivityResultFragment.setSubjectActivityResult(subject);
-		}
+		PublishSubject<RxResultEntity> subject = PublishSubject.create();
+		mRxActivityResultFragment.setSubjectActivityResult(subject);
 
 		mRxActivityResultFragment.startRequest();
 		return Observable.concat(Observable.just(subject)).observeOn(AndroidSchedulers.mainThread());

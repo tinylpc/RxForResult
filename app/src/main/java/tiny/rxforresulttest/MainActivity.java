@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 							@Override
 							public void call(RxResultEntity rxResultEntity) {
 
+								Log.i("lpc", rxResultEntity.toString());
 							}
 						});
 			}
