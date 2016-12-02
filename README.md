@@ -3,7 +3,7 @@
 
 # 引用方式
 `
-compile 'com.tinylpc:rxforresult:1.0.0's
+compile 'com.tinylpc:rxforresult:1.0.0'
 `
 
 # 调用方式
