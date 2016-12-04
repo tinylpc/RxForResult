@@ -7,11 +7,11 @@ compile 'com.tinylpc:rxforresult:1.0.0'
 `
 
 # 调用方式
-`
-  new RxForResult(MainActivity.this).appendIntent(intent).appendRequestCode(10).startReuqest()
+```
+  new RxForResult(MainActivity.this).appendIntent(intent).appendRequestCode(10).startReuqest()
 	.subscribe(new Action1<RxResultEntity>() {
-	@Override
-	public void call(RxResultEntity rxResultEntity) {
-	}
+	   @Override
+	   public void call(RxResultEntity rxResultEntity) {
+	   }
 	});
-`
+```
