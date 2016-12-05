@@ -20,7 +20,6 @@ import rx.functions.Action1;
  *
  * @author tiny
  * @version 2016/12/02 15:52
- *          CopyRight www.eku001.com
  */
 public class TestFragment extends Fragment {
 

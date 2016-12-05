@@ -12,7 +12,6 @@ import android.view.View;
  *
  * @author tiny
  * @version 2016/12/02 15:39
- *          CopyRight www.eku001.com
  */
 public class SecondActivity extends AppCompatActivity {
 

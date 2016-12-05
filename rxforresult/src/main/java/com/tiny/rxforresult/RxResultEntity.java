@@ -8,7 +8,6 @@ import android.content.Intent;
  *
  * @author tiny
  * @version 2016/12/02 11:32
- *          CopyRight www.eku001.com
  */
 public class RxResultEntity {
 
